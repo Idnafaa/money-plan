@@ -1,18 +1,16 @@
 import os
 
-TEXT = (
-    "Day1: enter 2 free make.fun code bounties/day x30d (60 entries, "
-    "$0 fees). Keep $100 for API/hosting + paid entries. ~1 in 6 "
-    "places top-50 (avg $18) = ~$180 EV; top-10 adds $50+. Edge: "
-    "sponsors pay, zero marketing; agent codes 24/7. Reinvest wins "
-    "into paid pools."
+PLAN = (
+    "Day1: post 3 Fiverr gigs at $25: Python bugfix, CSV cleaner, Discord bot. "
+    "$100 budget: $30 hosting, $70 ads. Need 8 buyers in 30d = $200 gross, $160 net after 20% fee, "
+    "EV +$60. Edge: 2-hour delivery, 24/7, speed beats human freelancers."
 )
 
 
 def main() -> None:
     os.makedirs("/output", exist_ok=True)
-    with open("/output/entry.txt", "w", encoding="utf-8") as f:
-        f.write(TEXT)
+    with open("/output/entry.txt", "w", encoding="utf-8") as out:
+        out.write(PLAN)
 
 
 if __name__ == "__main__":
